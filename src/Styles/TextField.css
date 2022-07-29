@@ -1,0 +1,63 @@
+main {
+    background: #f2f2f2;
+    min-height: 80vh;
+    height: max-content;
+    padding-bottom: 10vh;
+}
+.main-dark {
+    background-color: #000 !important;
+    color: #fff;
+}
+.contain {
+    width: 90vw;
+    margin: auto;
+    height: max-content;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container > h1 {
+    margin: 0.5rem 0;
+}
+
+#text-area {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-family: "Roboto";
+}
+
+.text-area-dark {
+    background-color: #3b325b !important;
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    background-color: #4a00e0;
+}
+button:hover {
+    background-color: hsl(260, 100%, 35%);
+}
+button:disabled {
+    background-color: hsl(272, 76%, 63%);
+    cursor: default;
+}
+
+.results {
+    margin-top: 2rem;
+}
+.results p {
+    font-size: 1.5rem;
+}
