@@ -28,8 +28,8 @@ input[type="checkbox"] {
 .mode-label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 60px;
-    height: 30px;
+    width: 7vh;
+    height: 3.5vh;
     background: grey;
     display: block;
     border-radius: 100px;

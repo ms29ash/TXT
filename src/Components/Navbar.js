@@ -1,12 +1,14 @@
 import React from 'react'
 import '../Styles/Navbar.css'
 
-function Navbar({ mode, setMode }) {
+function Navbar({ mode, setMode, toggleAlert }) {
     const toggleMode = () => {
         if (mode === 'dark') {
             setMode('light')
+            toggleAlert('Light mode enabled')
         } else {
             setMode('dark')
+            toggleAlert('Dark mode enabled')
         }
     }
 

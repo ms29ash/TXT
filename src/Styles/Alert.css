@@ -1,0 +1,27 @@
+.alert-container {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 85vh;
+    right: 15px;
+    width: 35vw;
+    height: 10vh;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(75, 0, 224, 1) 0px 3px 8px;
+    box-shadow: rgb(75, 0, 224, 1) 0px 5px 15px;
+    box-shadow: rgb(75, 0, 224, 1) 3px 3px 5px;
+    color: #000;
+    background-color: #fff;
+    transform: translateX(50vw);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.alert {
+    transform: translateX(0) !important;
+}

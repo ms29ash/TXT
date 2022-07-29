@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/TextField.css";
 
-function TextField({ mode }) {
+function TextField({ mode, toggleAlert }) {
   const [text, setText] = useState("");
 
   const handleChange = (e) => {
@@ -17,7 +17,9 @@ function TextField({ mode }) {
 
   const copyText = () => {
     navigator.clipboard.writeText(text);
+    toggleAlert('Copied to clipboard');
   };
+
 
   return (
     <main className={` main-${mode}`}>
@@ -48,7 +50,7 @@ function TextField({ mode }) {
           </div>
 
           <div className="results">
-            <h1>Your Text summary</h1>
+            <h3>Your Text summary</h3>
             <p>
               {" "}
               {
@@ -68,7 +70,7 @@ function TextField({ mode }) {
               minutes require to read
             </p>
 
-            <h3>Preview</h3>
+            <h3 id="preview" >Preview</h3>
 
             <p>{text}</p>
           </div>
