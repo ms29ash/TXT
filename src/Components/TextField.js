@@ -58,7 +58,7 @@ function TextField({ mode, toggleAlert }) {
                   return element.length !== 0;
                 }).length
               }{" "}
-              words and {text.length} char
+              words and {text.length} characters
             </p>
 
             <p>

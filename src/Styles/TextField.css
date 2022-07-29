@@ -41,6 +41,7 @@ button {
     border: none;
     padding: 1rem;
     margin-right: 1rem;
+    margin-top: 1rem;
     border-radius: 10px;
     cursor: pointer;
     color: white;
@@ -58,6 +59,39 @@ button:disabled {
 .results {
     margin-top: 2rem;
 }
+.results > h3 {
+    font-size: 2rem;
+}
+#preview {
+    margin-top: 1rem;
+}
 .results p {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+    .container > h1 {
+        margin: 0.25rem 0;
+    }
+    #text-area {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+    }
+    button {
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .results {
+        margin-top: 1rem;
+    }
+    .results > h3 {
+        font-size: 1.25rem;
+    }
+    .results > p {
+        font-size: 0.9rem;
+    }
 }

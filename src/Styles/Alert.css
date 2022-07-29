@@ -20,8 +20,25 @@
     transition-duration: 500ms;
     font-size: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .alert {
     transform: translateX(0) !important;
+}
+
+@media screen and (max-width: 600px) {
+    .alert-container {
+        transform: translateX(0);
+        top: 70vh;
+        right: 25vw;
+        left: 25vw;
+        width: 50vw;
+        height: 8vh;
+        opacity: 0;
+        /* max-width: 300px; */
+    }
+    .alert {
+        opacity: 1;
+    }
 }
